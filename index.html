@@ -5,3 +5,430 @@
 <meta name="color-scheme" content="light">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Procura Ambulance — Te llevamos donde necesitas estar. Transporte médico privado en Puerto Rico. 787-995-7090.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://procuraambulance.com">
+<title>Procura Ambulance | Puerto Rico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Procura Ambulance LLC","url":"https://procuraambulance.com","telephone":"+17879957090","email":"breyes@procuraambulance.com","address":{"@type":"PostalAddress","streetAddress":"1386 Calle San Jacinto, Urb. Altamesa","addressLocality":"San Juan","addressRegion":"PR","postalCode":"00921","addressCountry":"US"}}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  color-scheme:light;color-scheme:only light}
+html{color-scheme:only light}
+html{scroll-behavior:smooth}
+:root{
+  color-scheme:light;
+  --blue:#2563EB;
+  --blue-dk:#1E3A8A;
+  --blue-lt:#EFF6FF;
+  --ink:#09090B;
+  --ink2:#3F3F46;
+  --ink3:#71717A;
+  --ink4:#A1A1AA;
+  --rule:#E4E4E7;
+  --off:#FAFAFA;
+  --white:#FFFFFF;
+  --font:'Inter',-apple-system,'SF Pro Display',BlinkMacSystemFont,sans-serif;
+  --max:1100px;
+}
+[data-en]{display:none!important}
+body.en [data-es]{display:none!important}
+body.en [data-en]{display:revert!important}
+body{font-family:var(--font);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto;z-index:99;height:58px;padding:0 2rem;background:rgba(255,255,255,.93);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.06);display:flex;align-items:center}
+.nav-inner{max-width:var(--max);margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:16px;font-weight:700;letter-spacing:-.04em;color:var(--ink);text-decoration:none}
+.logo b{color:var(--blue)}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:13px;font-weight:400;color:var(--ink3);text-decoration:none;transition:color .12s}
+.nav-links a:hover{color:var(--ink)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.lang{font-family:var(--font);font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--ink4);background:none;border:1px solid var(--rule);border-radius:6px;padding:5px 10px;cursor:pointer;transition:all .12s}
+.lang:hover{color:var(--ink);border-color:var(--ink4)}
+.nav-cta{font-size:13px;font-weight:600;color:var(--white);background:var(--blue);border-radius:8px;padding:8px 18px;text-decoration:none;transition:background .12s}
+.nav-cta:hover{background:var(--blue-dk)}
+.ham{display:none;background:none;border:none;cursor:pointer;padding:4px;flex-direction:column;gap:5px}
+.ham span{display:block;width:20px;height:1.5px;background:var(--ink)}
+
+/* HERO — full width, typographic */
+#hero{
+  padding-top:58px;
+  min-height:100svh;
+  display:flex;flex-direction:column;
+  border-bottom:1px solid var(--rule);
+  position:relative;overflow:hidden;
+}
+/* Decorative giant text in background */
+.hero-bg-text{
+  position:absolute;
+  right:-2%;bottom:-8%;
+  font-size:clamp(120px,18vw,260px);
+  font-weight:700;letter-spacing:-.06em;line-height:.85;
+  color:transparent;
+  -webkit-text-stroke:1.5px rgba(37,99,235,.13);
+  pointer-events:none;user-select:none;
+  text-align:right;
+  z-index:0;
+  white-space:nowrap;
+}
+/* Subtle grid lines */
+.hero-grid-line{
+  position:absolute;top:58px;bottom:0;
+  width:1px;background:rgba(0,0,0,.04);
+  z-index:0;
+}
+.hero-grid-line:nth-child(1){left:25%}
+.hero-grid-line:nth-child(2){left:50%}
+.hero-grid-line:nth-child(3){left:75%}
+/* Small circle accent */
+.hero-circle{
+  position:absolute;top:15%;right:8%;
+  width:180px;height:180px;border-radius:50%;
+  border:1px solid rgba(37,99,235,.08);
+  z-index:0;
+}
+.hero-circle::after{
+  content:'';position:absolute;inset:20px;border-radius:50%;
+  border:1px solid rgba(37,99,235,.05);
+}
+.hero-content{
+  position:relative;z-index:1;
+  flex:1;display:flex;flex-direction:column;justify-content:center;
+  max-width:var(--max);margin:0 auto;width:100%;
+  padding:3rem 2.5rem 2rem;
+}
+.h-eyebrow{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink4);margin-bottom:2.5rem;display:flex;align-items:center;gap:12px}
+.h-eyebrow::before{content:'';flex-shrink:0;width:24px;height:1px;background:var(--ink4)}
+.h1{
+  font-size:clamp(52px,7.5vw,110px);
+  font-weight:700;line-height:.95;
+  letter-spacing:-.055em;
+  color:var(--ink);
+  margin-bottom:2rem;
+  max-width:800px;
+}
+.h1 b{color:var(--blue)}
+.h-desc{
+  font-size:17px;font-weight:300;color:var(--ink3);
+  line-height:1.75;letter-spacing:-.02em;
+  max-width:520px;margin-bottom:2.75rem;
+}
+.h-btns{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.btn-main{display:inline-flex;align-items:center;gap:9px;font-family:var(--font);font-size:15px;font-weight:600;color:#fff;background:var(--blue);padding:14px 28px;border-radius:10px;text-decoration:none;letter-spacing:-.025em;transition:background .12s}
+.btn-main:hover{background:var(--blue-dk)}
+.btn-ghost{font-size:14px;font-weight:400;color:var(--ink3);text-decoration:none;letter-spacing:-.02em;transition:color .12s}
+.btn-ghost:hover{color:var(--ink)}
+
+/* SERVICIOS */
+#servicios{background:var(--off);border-bottom:1px solid var(--rule)}
+.wrap{max-width:var(--max);margin:0 auto;padding:5.5rem 2.5rem}
+.two-col{display:grid;grid-template-columns:260px 1fr;gap:6rem;align-items:start}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:1rem}
+.sec-h{font-size:clamp(22px,2.8vw,38px);font-weight:700;letter-spacing:-.04em;line-height:1.0;color:var(--ink);margin-bottom:1rem}
+.sec-h i{font-style:normal;font-weight:300;color:var(--ink3)}
+.sec-note{font-size:15px;font-weight:300;color:var(--ink3);line-height:1.75;letter-spacing:-.02em}
+.svc-rows{display:flex;flex-direction:column}
+.svc-row{display:grid;grid-template-columns:24px 1fr;gap:1.5rem;align-items:start;padding:1.625rem 1rem;margin:0 -1rem;border-bottom:1px solid var(--rule);border-radius:10px;transition:background .15s}
+.svc-row:first-child{border-top:1px solid var(--rule)}
+.svc-row:hover{background:var(--white)}
+.svc-n{font-size:11px;font-weight:700;color:rgba(37,99,235,.4);letter-spacing:.06em;padding-top:4px}
+.svc-row h3{font-size:16px;font-weight:600;color:var(--ink);letter-spacing:-.03em;margin-bottom:.4rem;line-height:1.3}
+.svc-row p{font-size:14px;font-weight:300;color:var(--ink3);line-height:1.7;letter-spacing:-.01em}
+
+/* PLANES */
+#planes{background:var(--blue-dk);border-bottom:none}
+.pl-grid{max-width:var(--max);margin:0 auto;padding:5.5rem 2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
+.pl-h{font-size:clamp(22px,2.8vw,38px);font-weight:700;letter-spacing:-.04em;line-height:1.0;color:#fff;margin-bottom:1rem}
+.pl-h i{font-style:normal;font-weight:300;color:rgba(255,255,255,.4)}
+.pl-p{font-size:15px;font-weight:300;color:rgba(255,255,255,.5);line-height:1.75;letter-spacing:-.02em;margin-bottom:1.5rem}
+.pl-cta-lnk{font-size:14px;font-weight:500;color:rgba(255,255,255,.65);text-decoration:none;letter-spacing:-.02em;transition:color .12s}
+.pl-cta-lnk:hover{color:#fff}
+.pl-rows{display:flex;flex-direction:column}
+.pl-row{display:flex;align-items:center;justify-content:space-between;padding:.875rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px;font-weight:500;letter-spacing:-.02em;color:rgba(255,255,255,.85)}
+.pl-row:first-child{border-top:1px solid rgba(255,255,255,.08)}
+.pl-ck{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.pl-ck svg{stroke:rgba(255,255,255,.75)}
+.pago-wrap{margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08)}
+.pago-lbl{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.875rem}
+.pago-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:.75rem}
+.pago-tag{font-size:12px;font-weight:400;letter-spacing:-.01em;color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.12);border-radius:100px;padding:4px 13px}
+
+/* CONTACTO */
+#contacto{border-bottom:1px solid var(--rule)}
+.con-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr}
+.con-l{padding:5.5rem 4rem 5.5rem 2.5rem;border-right:1px solid var(--rule)}
+.con-r{padding:5.5rem 2.5rem 5.5rem 4rem;background:var(--off)}
+.con-h{font-size:clamp(22px,2.8vw,38px);font-weight:700;letter-spacing:-.04em;line-height:1.0;color:var(--ink);margin-bottom:2.5rem}
+.con-h i{font-style:normal;font-weight:300;color:var(--ink3)}
+.con-rows{display:flex;flex-direction:column}
+.ci{display:flex;align-items:baseline;gap:1.25rem;padding:.875rem 0;border-bottom:1px solid var(--rule);text-decoration:none;transition:opacity .12s}
+.ci:first-child{border-top:1px solid var(--rule)}
+.ci:hover{opacity:.5}
+.ci-l{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink4);min-width:36px;flex-shrink:0;padding-top:3px}
+.ci-v{font-size:18px;font-weight:600;letter-spacing:-.03em;color:var(--ink);line-height:1.2}
+.ci-sm{font-size:14px;font-weight:400;letter-spacing:-.02em;color:var(--ink2)}
+.con-addr{margin-top:2rem;padding-top:1.75rem;border-top:1px solid var(--rule)}
+.ca-l{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink4);margin-bottom:.5rem}
+.ca-p{font-size:13px;font-weight:300;color:var(--ink3);line-height:1.9;font-style:normal;letter-spacing:-.01em}
+.f-title{font-size:20px;font-weight:700;letter-spacing:-.04em;color:var(--ink);margin-bottom:4px}
+.f-sub{font-size:13px;font-weight:300;color:var(--ink3);margin-bottom:1.75rem;letter-spacing:-.01em}
+.fg{margin-bottom:1rem}
+.fl{display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fi{width:100%;background:var(--white);border:1px solid var(--rule);border-radius:9px;padding:11px 14px;font-family:var(--font);font-size:14px;font-weight:300;color:var(--ink);letter-spacing:-.01em;outline:none;appearance:none;transition:border-color .12s,box-shadow .12s}
+.fi::placeholder{color:var(--ink4)}
+.fi:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.08)}
+select.fi{cursor:pointer}
+textarea.fi{resize:vertical;min-height:90px;line-height:1.65}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.btn-send{width:100%;margin-top:.5rem;font-family:var(--font);font-size:14px;font-weight:600;color:#fff;background:var(--blue);border:none;border-radius:9px;padding:14px;cursor:pointer;letter-spacing:-.025em;transition:background .12s}
+.btn-send:hover{background:var(--blue-dk)}
+.f-ok{display:none;padding:1.5rem;text-align:center;font-size:14px;color:#16a34a;letter-spacing:-.01em}
+
+/* FOOTER */
+footer{background:var(--ink);padding:.875rem 2.5rem}
+.foot{max-width:var(--max);margin:0 auto;font-size:11px;font-weight:300;letter-spacing:.02em;color:rgba(255,255,255,.2);text-align:center}
+
+/* FLOATS */
+.floats{position:fixed;bottom:1.5rem;right:1.5rem;z-index:199;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.fl-btn{display:flex;align-items:center;gap:8px;font-family:var(--font);font-size:13px;font-weight:600;letter-spacing:-.02em;text-decoration:none;padding:11px 18px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,.15);transition:transform .12s}
+.fl-btn:hover{transform:translateY(-1px)}
+.fl-tel{background:var(--blue);color:#fff}
+.fl-wa{background:#22C55E;color:#fff}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .nav-links,.nav-cta{display:none}
+  .ham{display:flex}
+  .two-col{grid-template-columns:1fr;gap:3rem}
+  .pl-grid{grid-template-columns:1fr;gap:3rem}
+  .con-grid{grid-template-columns:1fr}
+  .con-l{border-right:none;border-bottom:1px solid var(--rule);padding:4rem 1.5rem 3rem}
+  .con-r{padding:3rem 1.5rem 4.5rem}
+  .wrap,.pl-grid{padding:4rem 1.5rem}
+}
+@media(max-width:560px){
+  nav{padding:0 1.25rem}
+  .hero-content{padding:2.5rem 1.25rem 2rem}
+  .h1{font-size:48px}
+  .hero-bg-text{font-size:100px}
+  .f2{grid-template-columns:1fr}
+  .fl-btn span{display:none}
+  .fl-btn{padding:13px;border-radius:50%}
+  .hero-bg-text{font-size:80px;right:-5%;bottom:-5%}
+  footer{padding:.875rem 1.25rem}
+}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}
+
+@media(prefers-color-scheme:dark){
+  html,body{background:#fff!important;color:#09090B!important}
+  nav{background:rgba(255,255,255,.97)!important;border-color:#E4E4E7!important}
+  .logo,.nav-links a,.lang,.n-tel,.nav-cta{color:inherit!important}
+  #servicios{background:#FAFAFA!important}
+  .svc-row h3,.sec-h,.eyebrow,.sec-note,.svc-n{color:inherit!important}
+  .fi{background:#fff!important;color:#09090B!important;border-color:#E4E4E7!important}
+  .con-l,.con-h,.ci-v,.ci-l,.ca-p{color:inherit!important}
+  .f-title,.f-sub,.fl{color:inherit!important}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="logo"><b>Procura</b> Ambulance</a>
+    <ul class="nav-links">
+      <li><a href="#servicios" data-es>Servicios</a><a href="#servicios" data-en>Services</a></li>
+      <li><a href="#planes" data-es>Planes</a><a href="#planes" data-en>Plans</a></li>
+      <li><a href="#contacto" data-es>Contacto</a><a href="#contacto" data-en>Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang" id="langBtn">EN</button>
+      <a href="tel:+17879957090" class="nav-cta">(787) 995-7090</a>
+    </div>
+    <button class="ham" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section id="hero">
+  <!-- Grid line decoration -->
+  <div class="hero-grid-line"></div>
+  <div class="hero-grid-line"></div>
+  <div class="hero-grid-line"></div>
+  <!-- Circle accent -->
+  <div class="hero-circle"></div>
+  <!-- Big decorative background text -->
+  <div class="hero-bg-text" aria-hidden="true">
+    <span data-es>Te<br>llevamos.</span>
+    <span data-en>We<br>take you.</span>
+  </div>
+
+  <div class="hero-content">
+    <p class="h-eyebrow rv" data-es>Transporte Médico Privado · Puerto Rico</p>
+    <p class="h-eyebrow rv" data-en>Private Medical Transport · Puerto Rico</p>
+    <h1 class="h1 rv d1">
+      <span data-es>Te llevamos<br>donde necesitas <b>estar.</b></span>
+      <span data-en>We take you<br>where you need <b>to be.</b></span>
+    </h1>
+    <p class="h-desc rv d2">
+      <span data-es>Con ambulancias privadas y paramédicos certificados, atendemos Puerto Rico con el mismo estándar en cada traslado.</span>
+      <span data-en>With private ambulances and certified paramedics, we serve Puerto Rico with the same standard in every transport.</span>
+    </p>
+    <div class="h-btns rv d3">
+      <a href="tel:+17879957090" class="btn-main">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.22 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <span data-es>Llamar · (787) 995-7090</span><span data-en>Call · (787) 995-7090</span>
+      </a>
+      <a href="#contacto" class="btn-ghost">
+        <span data-es>Solicitar por escrito →</span><span data-en>Request in writing →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow" data-es>Servicios</p><p class="eyebrow" data-en>Services</p>
+        <h2 class="sec-h rv"><span data-es>Lo que hacemos <i>bien.</i></span><span data-en>What we do <i>well.</i></span></h2>
+
+      </div>
+      <div class="svc-rows">
+        <div class="svc-row rv"><div class="svc-n">01</div><div><h3 data-es>Citas Médicas</h3><h3 data-en>Medical Appointments</h3><p data-es>Recogido, traslado y regreso coordinados. Sin estrés para la familia.</p><p data-en>Pickup, transport and return coordinated. No stress for the family.</p></div></div>
+        <div class="svc-row rv d1"><div class="svc-n">02</div><div><h3>Diálisis</h3><p data-es>Servicio regular y confiable. La misma dedicación semana tras semana.</p><p data-en>Reliable, scheduled service. The same care week after week.</p></div></div>
+        <div class="svc-row rv d2"><div class="svc-n">03</div><div><h3 data-es>Quimioterapia</h3><h3 data-en>Chemotherapy</h3><p data-es>Traslados cómodos y discretos para pacientes oncológicos.</p><p data-en>Comfortable, discreet transport for oncology patients.</p></div></div>
+        <div class="svc-row rv d3"><div class="svc-n">04</div><div><h3 data-es>Altas Hospitalarias</h3><h3 data-en>Hospital Discharges</h3><p data-es>Coordinamos con el hospital. A casa o centro de rehabilitación.</p><p data-en>We coordinate with the hospital. Home or rehabilitation.</p></div></div>
+        <div class="svc-row rv d4"><div class="svc-n">05</div><div><h3 data-es>Traslados entre Facilidades</h3><h3 data-en>Facility Transfers</h3><p data-es>Entre hospitales, hogares de cuido y centros de rehabilitación.</p><p data-en>Between hospitals, care homes and rehabilitation centers.</p></div></div>
+        <div class="svc-row rv"><div class="svc-n">06</div><div><h3 data-es>Emergencias</h3><h3 data-en>Emergencies</h3><p data-es>Intervención avanzada cuando la situación lo requiere.</p><p data-en>Advanced intervention when the situation demands it.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planes">
+  <div class="pl-grid">
+    <div class="rv">
+      <h2 class="pl-h" data-es>Planes médicos <i>y métodos de pago.</i></h2>
+      <h2 class="pl-h" data-en>Insurance plans <i>and payment.</i></h2>
+      <p class="pl-p" data-es>Aceptamos la mayoría de los planes médicos de Puerto Rico. Llame para verificar su cobertura.</p>
+      <p class="pl-p" data-en>We accept most medical plans in Puerto Rico. Call to verify your coverage.</p>
+      <a href="tel:+17879957090" class="pl-cta-lnk" data-es>Llamar: (787) 995-7090 →</a>
+      <a href="tel:+17879957090" class="pl-cta-lnk" data-en>Call: (787) 995-7090 →</a>
+    </div>
+    <div class="rv d1">
+      <div class="pl-rows">
+        <div class="pl-row">Medicare Parte B<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
+        <div class="pl-row">MMM / PMC<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
+        <div class="pl-row">Triple-S Advantage<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
+        <div class="pl-row">Triple-S Vital<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
+        <div class="pl-row">MMM Vital<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
+      </div>
+      <div class="pago-wrap">
+        <p class="pago-lbl" data-es>Pago privado</p><p class="pago-lbl" data-en>Private pay</p>
+        <div class="pago-tags">
+          <span class="pago-tag" data-es>Tarjeta de crédito</span><span class="pago-tag" data-en>Credit card</span>
+          <span class="pago-tag">ATH Móvil</span>
+          <span class="pago-tag">PayPal</span>
+          <span class="pago-tag" data-es>Cheque · Efectivo</span><span class="pago-tag" data-en>Check · Cash</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="con-grid">
+    <div class="con-l">
+      <h2 class="con-h rv"><span data-es>Estamos para <i>servirle.</i></span><span data-en>We are here <i>to serve you.</i></span></h2>
+      <div class="con-rows">
+        <a href="tel:+17879957090" class="ci"><span class="ci-l">Tel.</span><span class="ci-v">(787) 995-7090</span></a>
+        <a href="tel:+19392668686" class="ci"><span class="ci-l" data-es>Alt.</span><span class="ci-l" data-en>Alt.</span><span class="ci-v">(939) 266-8686</span></a>
+        <a href="https://wa.me/17875018686" class="ci" target="_blank" rel="noopener"><span class="ci-l">WA</span><span class="ci-v">(787) 501-8686</span></a>
+        <div class="ci" style="cursor:default"><span class="ci-l">Fax</span><span class="ci-v">1-314-897-4260</span></div>
+        <a href="mailto:breyes@procuraambulance.com" class="ci"><span class="ci-l">Email</span><span class="ci-sm">breyes@procuraambulance.com</span></a>
+      </div>
+      <address class="con-addr">
+        <p class="ca-l" data-es>Dirección</p><p class="ca-l" data-en>Address</p>
+        <p class="ca-p">1386 Calle San Jacinto, Urb. Altamesa<br>San Juan, PR 00921<br>PO Box 7017, Caguas PR 00726</p>
+      </address>
+    </div>
+    <div class="con-r rv d1">
+      <p class="f-title" data-es>Escríbanos.</p><p class="f-title" data-en>Write to us.</p>
+      <p class="f-sub" data-es>Le contactamos a la brevedad.</p><p class="f-sub" data-en>We will be in touch shortly.</p>
+      <form id="cForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="1a867b7e-9607-4b66-a1e1-5f65a1533a5e">
+        <input type="hidden" name="subject" value="Nueva solicitud — Procura Ambulance">
+        <input type="hidden" name="from_name" value="Procura Ambulance Web">
+        <div class="f2">
+          <div class="fg"><label class="fl" for="nom" data-es>Nombre</label><label class="fl" for="nom" data-en>Name</label><input class="fi" type="text" id="nom" name="nombre" required autocomplete="name" placeholder="—"></div>
+          <div class="fg"><label class="fl" for="tel2" data-es>Teléfono</label><label class="fl" for="tel2" data-en>Phone</label><input class="fi" type="tel" id="tel2" name="telefono" required autocomplete="tel" placeholder="787-000-0000"></div>
+        </div>
+        <div class="fg">
+          <label class="fl" for="svc" data-es>Tipo de servicio</label><label class="fl" for="svc" data-en>Service type</label>
+          <select class="fi" id="svc" name="servicio" required>
+            <option value="" disabled selected>—</option>
+            <option value="cita" data-es="Cita médica" data-en="Medical appointment">Cita médica</option>
+            <option value="dialisis" data-es="Diálisis" data-en="Dialysis">Diálisis</option>
+            <option value="quimio" data-es="Quimioterapia" data-en="Chemotherapy">Quimioterapia</option>
+            <option value="alta" data-es="Alta hospitalaria" data-en="Hospital discharge">Alta hospitalaria</option>
+            <option value="traslado" data-es="Traslado entre facilidades" data-en="Facility transfer">Traslado entre facilidades</option>
+            <option value="emergencia" data-es="Emergencia" data-en="Emergency">Emergencia</option>
+            <option value="otro" data-es="Otro" data-en="Other">Otro</option>
+          </select>
+        </div>
+        <div class="fg"><label class="fl" for="msg" data-es>Mensaje</label><label class="fl" for="msg" data-en>Message</label><textarea class="fi" id="msg" name="mensaje" placeholder="—"></textarea></div>
+        <button type="submit" class="btn-send" data-es>Enviar solicitud</button>
+        <button type="submit" class="btn-send" data-en>Send request</button>
+      </form>
+      <div class="f-ok" id="fOk"><span data-es>Mensaje enviado. Le contactaremos a la brevedad.</span><span data-en>Message sent. We will be in touch shortly.</span></div>
+    </div>
+  </div>
+</section>
+
+<footer><p class="foot">© 2026 Procura Ambulance LLC · San Juan, Puerto Rico</p></footer>
+
+<div class="floats">
+  <a href="https://wa.me/17875018686" class="fl-btn fl-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+  <a href="tel:+17879957090" class="fl-btn fl-tel" aria-label="Llamar">
+    <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.22 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    <span>787-995-7090</span>
+  </a>
+</div>
+
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('in')}),{threshold:.06});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+let en=false;
+document.getElementById('langBtn').addEventListener('click',function(){
+  en=!en;
+  document.body.classList.toggle('en',en);
+  this.textContent=en?'ES':'EN';
+  document.documentElement.lang=en?'en':'es';
+  document.querySelectorAll('select option[data-es]').forEach(o=>{o.textContent=en?o.dataset.en:o.dataset.es});
+});
+const form=document.getElementById('cForm'),fok=document.getElementById('fOk');
+form.addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btns=form.querySelectorAll('.btn-send');
+  btns.forEach(b=>{b.disabled=true;b.style.opacity='.5'});
+  try{
+    const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+    if(r.ok){form.style.display='none';fok.style.display='block';}
+    else{btns.forEach(b=>{b.disabled=false;b.style.opacity='1'});}
+  }catch{btns.forEach(b=>{b.disabled=false;b.style.opacity='1'});}
+});
+</script>
+</body>
+</html>
