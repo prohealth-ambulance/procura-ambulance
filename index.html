@@ -32,7 +32,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
-<!-- reCAPTCHA v3 -->
 <script src="https://www.google.com/recaptcha/api.js?render=6LegoLwsAAAAJdOUtP4m15oGleCQnMo0rz1-6lu"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -42,9 +41,16 @@ html{color-scheme:only light!important;scroll-behavior:smooth}
   --rule:#E4E4E7;--off:#FAFAFA;--white:#FFFFFF;
   --font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--max:1100px;
 }
-[data-en]{display:none!important}
-body.en [data-es]{display:none!important}
-body.en [data-en]{display:revert!important}
+
+/* ── LANGUAGE SYSTEM — limpio ── */
+.es, .en { display: none !important; }
+body.lang-es .es { display: revert !important; }
+body.lang-en .en { display: revert !important; }
+body.lang-es .es.flex { display: flex !important; }
+body.lang-en .en.flex { display: flex !important; }
+body.lang-es .es.inline { display: inline !important; }
+body.lang-en .en.inline { display: inline !important; }
+
 body{font-family:var(--font);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 nav{position:fixed;inset:0 0 auto;z-index:99;height:58px;padding:0 2rem;background:rgba(255,255,255,.93);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06);display:flex;align-items:center}
 .nav-inner{max-width:var(--max);margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between}
@@ -178,7 +184,7 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
   .fi{background:#fff!important;color:#09090B!important;border-color:#E4E4E7!important}
   .sec-h,.svc-row h3,.con-h,.ci-v,.f-title,.logo{color:#09090B!important}
   .eyebrow{color:#2563EB!important}
-  .sec-note,.svc-row p,.h-desc,.ci-l,.ca-p,.f-sub,.fl{color:#71717A!important}
+  .svc-row p,.h-desc,.ci-l,.ca-p,.f-sub,.fl{color:#71717A!important}
   footer{background:#09090B!important}
 }
 .rv{opacity:0;transform:translateY(18px);transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
@@ -186,14 +192,14 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
 .d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}
 </style>
 </head>
-<body>
+<body class="lang-es">
 <nav>
   <div class="nav-inner">
     <a href="#hero" class="logo"><b>Procura</b> Ambulance</a>
     <ul class="nav-links">
-      <li><a href="#servicios" data-es>Servicios</a><a href="#servicios" data-en>Services</a></li>
-      <li><a href="#planes" data-es>Planes</a><a href="#planes" data-en>Plans</a></li>
-      <li><a href="#contacto" data-es>Contacto</a><a href="#contacto" data-en>Contact</a></li>
+      <li><a href="#servicios" class="es">Servicios</a><a href="#servicios" class="en">Services</a></li>
+      <li><a href="#planes" class="es">Planes</a><a href="#planes" class="en">Plans</a></li>
+      <li><a href="#contacto" class="es">Contacto</a><a href="#contacto" class="en">Contact</a></li>
     </ul>
     <div class="nav-right">
       <button class="lang" id="langBtn">EN</button>
@@ -210,27 +216,23 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
   <div style="position:absolute;bottom:20%;right:15%;width:80px;height:80px;border:1px solid rgba(37,99,235,.1);border-radius:50%;z-index:0"></div>
   <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 50%, rgba(37,99,235,.03) 0%, transparent 50%);z-index:0;pointer-events:none"></div>
   <div class="hero-bg-text" aria-hidden="true">
-    <span data-es>Te<br>llevamos.</span>
-    <span data-en>We'll get<br>you there.</span>
+    <span class="es">Te<br>llevamos.</span>
+    <span class="en">We'll get<br>you there.</span>
   </div>
   <div class="hero-content">
-    <p class="h-eyebrow rv" data-es>Ambulancia Privada &middot; Puerto Rico</p>
-    <p class="h-eyebrow rv" data-en>Private Ambulance &middot; Puerto Rico</p>
-    <h1 class="h1 rv d1">
-      <span data-es>Te llevamos<br>donde necesitas <b>estar.</b></span>
-      <span data-en>We take you<br>where you need <b>to be.</b></span>
-    </h1>
-    <p class="h-desc rv d2">
-      <span data-es>Coordinamos el traslado médico de principio a fin. Puntualidad, seguridad y paramédicos certificados — para que usted no tenga que preocuparse.</span>
-      <span data-en>We coordinate medical transport from start to finish. Punctuality, safety and certified paramedics — so you don't have to worry.</span>
-    </p>
+    <p class="h-eyebrow rv es">Ambulancia Privada &middot; Puerto Rico</p>
+    <p class="h-eyebrow rv en">Private Ambulance &middot; Puerto Rico</p>
+    <h1 class="h1 rv d1 es">Te llevamos<br>donde necesitas <b>estar.</b></h1>
+    <h1 class="h1 rv d1 en">We take you<br>where you need <b>to be.</b></h1>
+    <p class="h-desc rv d2 es">Coordinamos el traslado médico de principio a fin. Puntualidad, seguridad y paramédicos certificados — para que usted no tenga que preocuparse.</p>
+    <p class="h-desc rv d2 en">We coordinate medical transport from start to finish. Punctuality, safety and certified paramedics — so you don't have to worry.</p>
     <div class="h-btns rv d3">
       <a href="tel:+17879957090" class="btn-main">
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.22 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        <span data-es>Llamar &middot; (787) 995-7090</span><span data-en>Call &middot; (787) 995-7090</span>
+        <span class="es">Llamar &middot; (787) 995-7090</span><span class="en">Call &middot; (787) 995-7090</span>
       </a>
       <a href="#contacto" class="btn-ghost">
-        <span data-es>Solicitar por escrito &rarr;</span><span data-en>Request in writing &rarr;</span>
+        <span class="es">Solicitar por escrito &rarr;</span><span class="en">Request in writing &rarr;</span>
       </a>
     </div>
   </div>
@@ -239,16 +241,42 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
   <div class="wrap">
     <div class="two-col">
       <div>
-        <p class="eyebrow rv" data-es>Servicios</p><p class="eyebrow rv" data-en>Services</p>
-        <h2 class="sec-h rv"><span data-es>Lo que hacemos <i>bien.</i></span><span data-en>What we do <i>well.</i></span></h2>
+        <p class="eyebrow rv es">Servicios</p>
+        <p class="eyebrow rv en">Services</p>
+        <h2 class="sec-h rv es">Lo que hacemos <i>bien.</i></h2>
+        <h2 class="sec-h rv en">What we do <i>well.</i></h2>
       </div>
       <div class="svc-rows">
-        <div class="svc-row rv"><div class="svc-n">01</div><div><h3 data-es>Citas Médicas</h3><h3 data-en>Medical Appointments</h3><p data-es>Recogido, traslado y regreso coordinados. Sin estrés para la familia.</p><p data-en>Pickup, transport and return coordinated. No stress for the family.</p></div></div>
-        <div class="svc-row rv d1"><div class="svc-n">02</div><div><h3>Diálisis</h3><p data-es>Servicio regular y confiable. La misma dedicación semana tras semana.</p><p data-en>Reliable, scheduled service. The same care week after week.</p></div></div>
-        <div class="svc-row rv d2"><div class="svc-n">03</div><div><h3 data-es>Quimioterapia</h3><h3 data-en>Chemotherapy</h3><p data-es>Traslados cómodos y discretos para pacientes oncológicos.</p><p data-en>Comfortable, discreet transport for oncology patients.</p></div></div>
-        <div class="svc-row rv d3"><div class="svc-n">04</div><div><h3 data-es>Altas Hospitalarias</h3><h3 data-en>Hospital Discharges</h3><p data-es>Coordinamos con el hospital. A casa o centro de rehabilitación.</p><p data-en>We coordinate with the hospital. Home or rehabilitation center.</p></div></div>
-        <div class="svc-row rv d4"><div class="svc-n">05</div><div><h3 data-es>Traslados entre Facilidades</h3><h3 data-en>Facility Transfers</h3><p data-es>Entre hospitales, hogares de cuido y centros de rehabilitación.</p><p data-en>Between hospitals, care homes and rehabilitation centers.</p></div></div>
-        <div class="svc-row rv"><div class="svc-n">06</div><div><h3 data-es>Emergencias</h3><h3 data-en>Emergencies</h3><p data-es>Intervención avanzada cuando la situación lo requiere.</p><p data-en>Advanced intervention when the situation demands it.</p></div></div>
+        <div class="svc-row rv"><div class="svc-n">01</div><div>
+          <h3 class="es">Citas Médicas</h3><h3 class="en">Medical Appointments</h3>
+          <p class="es">Recogido, traslado y regreso coordinados. Sin estrés para la familia.</p>
+          <p class="en">Pickup, transport and return coordinated. No stress for the family.</p>
+        </div></div>
+        <div class="svc-row rv d1"><div class="svc-n">02</div><div>
+          <h3>Diálisis</h3>
+          <p class="es">Servicio regular y confiable. La misma dedicación semana tras semana.</p>
+          <p class="en">Reliable, scheduled service. The same care week after week.</p>
+        </div></div>
+        <div class="svc-row rv d2"><div class="svc-n">03</div><div>
+          <h3 class="es">Quimioterapia</h3><h3 class="en">Chemotherapy</h3>
+          <p class="es">Traslados cómodos y discretos para pacientes oncológicos.</p>
+          <p class="en">Comfortable, discreet transport for oncology patients.</p>
+        </div></div>
+        <div class="svc-row rv d3"><div class="svc-n">04</div><div>
+          <h3 class="es">Altas Hospitalarias</h3><h3 class="en">Hospital Discharges</h3>
+          <p class="es">Coordinamos con el hospital. A casa o centro de rehabilitación.</p>
+          <p class="en">We coordinate with the hospital. Home or rehabilitation center.</p>
+        </div></div>
+        <div class="svc-row rv d4"><div class="svc-n">05</div><div>
+          <h3 class="es">Traslados entre Facilidades</h3><h3 class="en">Facility Transfers</h3>
+          <p class="es">Entre hospitales, hogares de cuido y centros de rehabilitación.</p>
+          <p class="en">Between hospitals, care homes and rehabilitation centers.</p>
+        </div></div>
+        <div class="svc-row rv"><div class="svc-n">06</div><div>
+          <h3 class="es">Emergencias</h3><h3 class="en">Emergencies</h3>
+          <p class="es">Intervención avanzada cuando la situación lo requiere.</p>
+          <p class="en">Advanced intervention when the situation demands it.</p>
+        </div></div>
       </div>
     </div>
   </div>
@@ -256,12 +284,12 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
 <section id="planes">
   <div class="pl-grid">
     <div class="rv">
-      <h2 class="pl-h" data-es>Planes médicos <i>y métodos de pago.</i></h2>
-      <h2 class="pl-h" data-en>Insurance plans <i>and payment.</i></h2>
-      <p class="pl-p" data-es>Aceptamos la mayoría de los planes médicos de Puerto Rico. Llame para verificar su cobertura.</p>
-      <p class="pl-p" data-en>We accept most medical plans in Puerto Rico. Call to verify your coverage.</p>
-      <a href="tel:+17879957090" class="pl-cta-lnk" data-es>Llamar: (787) 995-7090 &rarr;</a>
-      <a href="tel:+17879957090" class="pl-cta-lnk" data-en>Call: (787) 995-7090 &rarr;</a>
+      <h2 class="pl-h es">Planes médicos <i>y métodos de pago.</i></h2>
+      <h2 class="pl-h en">Insurance plans <i>and payment.</i></h2>
+      <p class="pl-p es">Aceptamos la mayoría de los planes médicos de Puerto Rico. Llame para verificar su cobertura.</p>
+      <p class="pl-p en">We accept most medical plans in Puerto Rico. Call to verify your coverage.</p>
+      <a href="tel:+17879957090" class="pl-cta-lnk es">Llamar: (787) 995-7090 &rarr;</a>
+      <a href="tel:+17879957090" class="pl-cta-lnk en">Call: (787) 995-7090 &rarr;</a>
     </div>
     <div class="rv d1">
       <div class="pl-rows">
@@ -272,12 +300,12 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
         <div class="pl-row">Planes Vital<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
       </div>
       <div class="pago-wrap">
-        <p class="pago-lbl" data-es>Pago privado</p><p class="pago-lbl" data-en>Private pay</p>
+        <p class="pago-lbl es">Pago privado</p><p class="pago-lbl en">Private pay</p>
         <div class="pago-tags">
-          <span class="pago-tag" data-es>Tarjeta de crédito</span><span class="pago-tag" data-en>Credit card</span>
+          <span class="pago-tag es">Tarjeta de crédito</span><span class="pago-tag en">Credit card</span>
           <span class="pago-tag">ATH Móvil</span>
           <span class="pago-tag">PayPal</span>
-          <span class="pago-tag" data-es>Cheque &middot; Efectivo</span><span class="pago-tag" data-en>Check &middot; Cash</span>
+          <span class="pago-tag es">Cheque &middot; Efectivo</span><span class="pago-tag en">Check &middot; Cash</span>
         </div>
       </div>
     </div>
@@ -286,7 +314,8 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
 <section id="contacto">
   <div class="con-grid">
     <div class="con-l">
-      <h2 class="con-h rv"><span data-es>Estamos para <i>servirle.</i></span><span data-en>We are here <i>to serve you.</i></span></h2>
+      <h2 class="con-h rv es">Estamos para <i>servirle.</i></h2>
+      <h2 class="con-h rv en">We are here <i>to serve you.</i></h2>
       <div class="con-rows">
         <a href="tel:+17879957090" class="ci"><span class="ci-l">Tel.</span><span class="ci-v">(787) 995-7090</span></a>
         <a href="tel:+19392668686" class="ci"><span class="ci-l">Alt.</span><span class="ci-v">(939) 266-8686</span></a>
@@ -295,41 +324,44 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
         <a href="mailto:breyes@procuraambulance.com" class="ci"><span class="ci-l">Email</span><span class="ci-sm">breyes@procuraambulance.com</span></a>
       </div>
       <address class="con-addr">
-        <p class="ca-l" data-es>Dirección</p><p class="ca-l" data-en>Address</p>
+        <p class="ca-l es">Dirección</p><p class="ca-l en">Address</p>
         <p class="ca-p">1386 Calle San Jacinto, Urb. Altamesa<br>San Juan, PR 00921<br>PO Box 7017, Caguas PR 00726</p>
       </address>
     </div>
     <div class="con-r rv d1">
-      <p class="f-title" data-es>Escríbanos.</p><p class="f-title" data-en>Write to us.</p>
-      <p class="f-sub" data-es>Le contactamos a la brevedad.</p><p class="f-sub" data-en>We will be in touch shortly.</p>
+      <p class="f-title es">Escríbanos.</p><p class="f-title en">Write to us.</p>
+      <p class="f-sub es">Le contactamos a la brevedad.</p><p class="f-sub en">We will be in touch shortly.</p>
       <form id="cForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
         <input type="hidden" name="access_key" value="1a867b7e-9607-4b66-a1e1-5f65a1533a5e">
         <input type="hidden" name="subject" value="Nueva solicitud — Procura Ambulance">
         <input type="hidden" name="from_name" value="Procura Ambulance Web">
         <input type="hidden" name="g-recaptcha-response" id="recaptcha-token-procura">
         <div class="f2">
-          <div class="fg"><label class="fl" for="nom" data-es>Nombre</label><label class="fl" for="nom" data-en>Name</label><input class="fi" type="text" id="nom" name="nombre" required autocomplete="name" placeholder="—"></div>
-          <div class="fg"><label class="fl" for="tel2" data-es>Teléfono</label><label class="fl" for="tel2" data-en>Phone</label><input class="fi" type="tel" id="tel2" name="telefono" required autocomplete="tel" placeholder="787-000-0000"></div>
+          <div class="fg"><label class="fl es" for="nom">Nombre</label><label class="fl en" for="nom">Name</label><input class="fi" type="text" id="nom" name="nombre" required autocomplete="name" placeholder="—"></div>
+          <div class="fg"><label class="fl es" for="tel2">Teléfono</label><label class="fl en" for="tel2">Phone</label><input class="fi" type="tel" id="tel2" name="telefono" required autocomplete="tel" placeholder="787-000-0000"></div>
         </div>
         <div class="fg">
-          <label class="fl" for="svc" data-es>Tipo de servicio</label><label class="fl" for="svc" data-en>Service type</label>
+          <label class="fl es" for="svc">Tipo de servicio</label><label class="fl en" for="svc">Service type</label>
           <select class="fi" id="svc" name="servicio" required>
             <option value="" disabled selected>—</option>
-            <option value="cita">Cita médica</option>
-            <option value="dialisis">Diálisis</option>
-            <option value="quimio">Quimioterapia</option>
-            <option value="alta">Alta hospitalaria</option>
-            <option value="traslado">Traslado entre facilidades</option>
-            <option value="emergencia">Emergencia</option>
-            <option value="otro">Otro</option>
+            <option value="cita">Cita médica / Medical appointment</option>
+            <option value="dialisis">Diálisis / Dialysis</option>
+            <option value="quimio">Quimioterapia / Chemotherapy</option>
+            <option value="alta">Alta hospitalaria / Hospital discharge</option>
+            <option value="traslado">Traslado entre facilidades / Facility transfer</option>
+            <option value="emergencia">Emergencia / Emergency</option>
+            <option value="otro">Otro / Other</option>
           </select>
         </div>
-        <div class="fg"><label class="fl" for="msg" data-es>Mensaje</label><label class="fl" for="msg" data-en>Message</label><textarea class="fi" id="msg" name="mensaje" placeholder="—"></textarea></div>
-        <button type="submit" class="btn-send" id="submit-procura" data-es>Enviar solicitud</button>
-        <button type="submit" class="btn-send" data-en style="display:none">Send request</button>
+        <div class="fg"><label class="fl es" for="msg">Mensaje</label><label class="fl en" for="msg">Message</label><textarea class="fi" id="msg" name="mensaje" placeholder="—"></textarea></div>
+        <button type="submit" class="btn-send es" id="submit-procura">Enviar solicitud</button>
+        <button type="submit" class="btn-send en" id="submit-procura-en">Send request</button>
         <p class="recaptcha-note">Protegido por reCAPTCHA · <a href="https://policies.google.com/privacy" target="_blank">Privacidad</a> · <a href="https://policies.google.com/terms" target="_blank">Términos</a></p>
       </form>
-      <div class="f-ok" id="fOk"><span data-es>Mensaje enviado. Le contactaremos a la brevedad.</span><span data-en>Message sent. We will be in touch shortly.</span></div>
+      <div class="f-ok" id="fOk">
+        <span class="es">Mensaje enviado. Le contactaremos a la brevedad.</span>
+        <span class="en">Message sent. We will be in touch shortly.</span>
+      </div>
     </div>
   </div>
 </section>
@@ -354,7 +386,7 @@ setTimeout(()=>document.querySelectorAll('.rv').forEach(el=>el.classList.add('in
 let en=false;
 document.getElementById('langBtn').addEventListener('click',function(){
   en=!en;
-  document.body.classList.toggle('en',en);
+  document.body.className=en?'lang-en':'lang-es';
   this.textContent=en?'ES':'EN';
   document.documentElement.lang=en?'en':'es';
 });
@@ -362,14 +394,16 @@ const form=document.getElementById('cForm'),fok=document.getElementById('fOk');
 form.addEventListener('submit',async function(e){
   e.preventDefault();
   const btn=document.getElementById('submit-procura');
-  btn.disabled=true;btn.style.opacity='.5';
+  const btnEn=document.getElementById('submit-procura-en');
+  if(btn)btn.disabled=true;
+  if(btnEn)btnEn.disabled=true;
   try{
     const token=await grecaptcha.execute(RECAPTCHA_SITE_KEY,{action:'submit'});
     document.getElementById('recaptcha-token-procura').value=token;
     const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
     if(r.ok){form.style.display='none';fok.style.display='block';}
-    else{btn.disabled=false;btn.style.opacity='1';}
-  }catch{btn.disabled=false;btn.style.opacity='1';}
+    else{if(btn)btn.disabled=false;if(btnEn)btnEn.disabled=false;}
+  }catch{if(btn)btn.disabled=false;if(btnEn)btnEn.disabled=false;}
 });
 </script>
 </body>
