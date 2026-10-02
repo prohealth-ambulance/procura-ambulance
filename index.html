@@ -67,7 +67,7 @@ nav{position:fixed;inset:0 0 auto;z-index:99;height:58px;padding:0 2rem;backgrou
 .ham{display:none;background:none;border:none;cursor:pointer;padding:4px;flex-direction:column;gap:5px}
 .ham span{display:block;width:20px;height:1.5px;background:var(--ink)}
 #hero{padding-top:58px;min-height:100svh;display:flex;flex-direction:column;border-bottom:1px solid var(--rule);position:relative;overflow:hidden;background:var(--white)}
-.hero-bg-text{position:absolute;right:0;bottom:10%;font-size:clamp(80px,15vw,200px);font-weight:900;letter-spacing:-.08em;line-height:.85;color:transparent;-webkit-text-stroke:1.5px rgba(37,99,235,.45);pointer-events:none;user-select:none;text-align:right;z-index:0;padding-right:3%;white-space:nowrap;animation:float 6s ease-in-out infinite}
+.hero-bg-text{position:absolute;right:0;bottom:2%;font-size:clamp(50px,8vw,110px);font-weight:900;letter-spacing:-.08em;line-height:.85;color:transparent;-webkit-text-stroke:1px rgba(37,99,235,.18);pointer-events:none;user-select:none;text-align:right;z-index:0;padding-right:3%;white-space:nowrap;animation:float 6s ease-in-out infinite}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
 .hero-grid-line{position:absolute;top:58px;bottom:0;width:1px;background:rgba(0,0,0,.04);z-index:0}
 .hero-grid-line:nth-child(1){left:25%}
@@ -220,19 +220,19 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
     <span class="en">We'll get<br>you there.</span>
   </div>
   <div class="hero-content">
-    <p class="h-eyebrow rv es">Ambulancia Privada &middot; Puerto Rico</p>
-    <p class="h-eyebrow rv en">Private Ambulance &middot; Puerto Rico</p>
+    <p class="h-eyebrow rv es">Ambulancia privada para citas médicas, diálisis, quimioterapia y altas hospitalarias en Puerto Rico</p>
+    <p class="h-eyebrow rv en">Private ambulance for medical appointments, dialysis, chemotherapy and hospital discharges in Puerto Rico</p>
     <h1 class="h1 rv d1 es">Te llevamos<br>donde necesitas <b>estar.</b></h1>
     <h1 class="h1 rv d1 en">We take you<br>where you need <b>to be.</b></h1>
-    <p class="h-desc rv d2 es">Coordinamos el traslado médico de principio a fin. Puntualidad, seguridad y paramédicos certificados — para que usted no tenga que preocuparse.</p>
-    <p class="h-desc rv d2 en">We coordinate medical transport from start to finish. Punctuality, safety and certified paramedics — so you don't have to worry.</p>
+    <p class="h-desc rv d2 es">Coordinamos tu traslado médico de principio a fin. Puntualidad, seguridad y paramédicos certificados, en toda Puerto Rico — para que tú y tu familia tengan tranquilidad.</p>
+    <p class="h-desc rv d2 en">We coordinate your medical transport from start to finish. Punctuality, safety and certified paramedics, across Puerto Rico — so you and your family have peace of mind.</p>
     <div class="h-btns rv d3">
       <a href="tel:+17879957090" class="btn-main">
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.22 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         <span class="es">Llamar &middot; (787) 995-7090</span><span class="en">Call &middot; (787) 995-7090</span>
       </a>
       <a href="#contacto" class="btn-ghost">
-        <span class="es">Solicitar por escrito &rarr;</span><span class="en">Request in writing &rarr;</span>
+        <span class="es">Solicitar un traslado &rarr;</span><span class="en">Request a transport &rarr;</span>
       </a>
     </div>
   </div>
@@ -253,7 +253,7 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
           <p class="en">Pickup, transport and return coordinated. No stress for the family.</p>
         </div></div>
         <div class="svc-row rv d1"><div class="svc-n">02</div><div>
-          <h3>Diálisis</h3>
+          <h3 class="es">Diálisis</h3><h3 class="en">Dialysis</h3>
           <p class="es">Servicio regular y confiable. La misma dedicación semana tras semana.</p>
           <p class="en">Reliable, scheduled service. The same care week after week.</p>
         </div></div>
@@ -293,7 +293,7 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
     </div>
     <div class="rv d1">
       <div class="pl-rows">
-        <div class="pl-row">Medicare Parte B<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
+        <div class="pl-row"><span class="es">Medicare Parte B</span><span class="en">Medicare Part B</span><div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
         <div class="pl-row">MMM / PMC<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
         <div class="pl-row">Triple-S Advantage<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
         <div class="pl-row">MCS Classicare<div class="pl-ck"><svg width="9" height="9" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div></div>
@@ -342,15 +342,25 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
         </div>
         <div class="fg">
           <label class="fl es" for="svc">Tipo de servicio</label><label class="fl en" for="svc">Service type</label>
-          <select class="fi" id="svc" name="servicio" required>
+          <select class="fi svc-select-es" id="svc" name="servicio" required>
             <option value="" disabled selected>—</option>
-            <option value="cita">Cita médica / Medical appointment</option>
-            <option value="dialisis">Diálisis / Dialysis</option>
-            <option value="quimio">Quimioterapia / Chemotherapy</option>
-            <option value="alta">Alta hospitalaria / Hospital discharge</option>
-            <option value="traslado">Traslado entre facilidades / Facility transfer</option>
-            <option value="emergencia">Emergencia / Emergency</option>
-            <option value="otro">Otro / Other</option>
+            <option value="cita">Cita médica</option>
+            <option value="dialisis">Diálisis</option>
+            <option value="quimio">Quimioterapia</option>
+            <option value="alta">Alta hospitalaria</option>
+            <option value="traslado">Traslado entre facilidades</option>
+            <option value="emergencia">Emergencia</option>
+            <option value="otro">Otro</option>
+          </select>
+          <select class="fi svc-select-en" id="svc-en" name="service_en" style="display:none">
+            <option value="" disabled selected>—</option>
+            <option value="appointment">Medical appointment</option>
+            <option value="dialysis">Dialysis</option>
+            <option value="chemo">Chemotherapy</option>
+            <option value="discharge">Hospital discharge</option>
+            <option value="transfer">Facility transfer</option>
+            <option value="emergency">Emergency</option>
+            <option value="other">Other</option>
           </select>
         </div>
         <div class="fg"><label class="fl es" for="msg">Mensaje</label><label class="fl en" for="msg">Message</label><textarea class="fi" id="msg" name="mensaje" placeholder="—"></textarea></div>
@@ -366,7 +376,7 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
   </div>
 </section>
 <footer>
-  <p class="foot">© 2026 Procura Ambulance LLC · San Juan, Puerto Rico · <a href="/privacy.html" style="color:inherit;opacity:.5;text-decoration:none">Privacidad</a></p>
+  <p class="foot"><span class="es">© 2026 Procura Ambulance LLC · San Juan, Puerto Rico · <a href="/privacy.html" style="color:inherit;opacity:.5;text-decoration:none">Privacidad</a></span><span class="en">© 2026 Procura Ambulance LLC · San Juan, Puerto Rico · <a href="/privacy.html" style="color:inherit;opacity:.5;text-decoration:none">Privacy</a></span></p>
 </footer>
 <div class="floats">
   <a href="https://wa.me/17875018686" class="fl-btn fl-wa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp a Procura Ambulance">
@@ -383,13 +393,22 @@ const RECAPTCHA_SITE_KEY = '6LegoLwsAAAAJdOUtP4m15oGleCQnMo0rz1-6lu';
 const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('in')}),{threshold:.06});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 setTimeout(()=>document.querySelectorAll('.rv').forEach(el=>el.classList.add('in')),400);
-let en=false;
+const titles={es:'Procura Ambulance | Transporte M\u00e9dico Privado en Puerto Rico',en:'Procura Ambulance | Private Medical Transport in Puerto Rico'};
+function applyLang(lang,skipSave){
+  document.body.className='lang-'+lang;
+  document.getElementById('langBtn').textContent=lang==='en'?'ES':'EN';
+  document.documentElement.lang=lang;
+  document.title=titles[lang];
+  const se=document.querySelector('.svc-select-es'),sn=document.querySelector('.svc-select-en');
+  if(se&&sn){se.style.display=lang==='es'?'block':'none';sn.style.display=lang==='en'?'block':'none';se.required=(lang==='es');sn.required=false;se.name='servicio';sn.name=lang==='en'?'servicio':'service_en_unused';}
+  document.querySelectorAll('.recaptcha-note').forEach(el=>{el.style.display=el.classList.contains(lang)?'block':'none';});
+  if(!skipSave){try{localStorage.setItem('pc_lang',lang);}catch(e){}}
+}
 document.getElementById('langBtn').addEventListener('click',function(){
-  en=!en;
-  document.body.className=en?'lang-en':'lang-es';
-  this.textContent=en?'ES':'EN';
-  document.documentElement.lang=en?'en':'es';
+  const cur=document.body.classList.contains('lang-en')?'en':'es';
+  applyLang(cur==='en'?'es':'en');
 });
+try{const saved=localStorage.getItem('pc_lang');if(saved==='en'){applyLang('en',true);}}catch(e){}
 const form=document.getElementById('cForm'),fok=document.getElementById('fOk');
 form.addEventListener('submit',async function(e){
   e.preventDefault();
