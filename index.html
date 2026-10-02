@@ -192,6 +192,15 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
 .d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}
 
     @media(min-width:901px){ .fl-tel { display: none; } }
+
+    #hero{display:grid!important;grid-template-columns:1fr 1fr;min-height:100svh;flex-direction:unset;}
+    .hero-content{padding:3rem 3rem 2rem 2.5rem;}
+    .hero-photo{position:relative;overflow:hidden;z-index:1;}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+    @media(max-width:900px){
+      #hero{grid-template-columns:1fr!important;}
+      .hero-photo{height:280px;order:-1;}
+    }
 </style>
 </head>
 <body class="lang-es">
@@ -237,6 +246,9 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
         <span class="es">Solicitar un traslado &rarr;</span><span class="en">Request a transport &rarr;</span>
       </a>
     </div>
+  </div>
+  <div class="hero-photo">
+    <img src="procura-hero-final.jpg" alt="Ambulancia Procura Ambulance en Puerto Rico" />
   </div>
 </section>
 <section id="servicios">
