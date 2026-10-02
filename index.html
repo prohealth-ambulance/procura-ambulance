@@ -201,6 +201,11 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
       #hero{grid-template-columns:1fr!important;}
       .hero-photo{height:280px;order:-1;}
     }
+
+    .hero-content{position:relative;overflow:hidden;}
+    .hero-bg-mini{position:absolute;left:-10px;bottom:-10px;font-size:3.2rem;font-weight:900;letter-spacing:-.04em;line-height:.9;color:transparent;-webkit-text-stroke:1px rgba(37,99,235,.14);pointer-events:none;user-select:none;z-index:0;animation:float 6s ease-in-out infinite;white-space:nowrap;}
+    .svc-bg-mini{position:absolute;right:20px;top:20px;font-size:5rem;font-weight:900;letter-spacing:-.04em;line-height:.85;color:transparent;-webkit-text-stroke:1px rgba(37,99,235,.08);pointer-events:none;user-select:none;z-index:0;white-space:nowrap;}
+    #servicios .wrap{position:relative;overflow:hidden;}
 </style>
 </head>
 <body class="lang-es">
@@ -231,6 +236,7 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
     <span class="en">We'll get<br>you there.</span>
   </div>
   <div class="hero-content">
+    <span class="hero-bg-mini" aria-hidden="true">Te llevamos.</span>
     <p class="h-eyebrow rv es">Ambulancia privada ALS para citas médicas, diálisis, quimioterapia y altas hospitalarias en Puerto Rico</p>
     <p class="h-eyebrow rv en">Private ALS ambulance for medical appointments, dialysis, chemotherapy and hospital discharges in Puerto Rico</p>
     <h1 class="h1 rv d1 es">Te llevamos<br>donde necesitas <b>estar.</b></h1>
@@ -253,6 +259,7 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
 </section>
 <section id="servicios">
   <div class="wrap">
+      <span class="svc-bg-mini" aria-hidden="true">Servicios</span>
     <div class="two-col">
       <div>
         <p class="eyebrow rv es">Servicios</p>
