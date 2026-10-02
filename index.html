@@ -152,8 +152,9 @@ textarea.fi{resize:vertical;min-height:90px;line-height:1.65}
 footer{background:var(--ink);padding:.875rem 2.5rem}
 .foot{max-width:var(--max);margin:0 auto;font-size:11px;font-weight:300;color:rgba(255,255,255,.2);text-align:center}
 .floats{position:fixed;bottom:1.5rem;right:1.5rem;z-index:199;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
-.fl-btn{display:flex;align-items:center;gap:8px;font-family:var(--font);font-size:13px;font-weight:600;text-decoration:none;padding:11px 18px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,.15);transition:transform .12s}
-.fl-btn:hover{transform:translateY(-1px)}
+.fl-btn{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font);font-size:13px;font-weight:600;text-decoration:none;padding:13px;width:48px;height:48px;border-radius:50%;box-shadow:0 4px 16px rgba(0,0,0,.18);transition:transform .12s}
+.fl-btn span{display:none}
+.fl-btn:hover{transform:scale(1.08)}
 .fl-tel{background:var(--blue);color:#fff}
 .fl-wa{background:#22C55E;color:#fff}
 @media(max-width:900px){
@@ -172,8 +173,7 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
   .h1{font-size:48px}
   .hero-bg-text{font-size:80px;right:-5%;bottom:-5%}
   .f2{grid-template-columns:1fr}
-  .fl-btn span{display:none}
-  .fl-btn{padding:13px;border-radius:50%}
+    .fl-btn{padding:13px;border-radius:50%}
   footer{padding:.875rem 1.25rem}
 }
 @media(prefers-color-scheme:dark){
@@ -249,32 +249,32 @@ footer{background:var(--ink);padding:.875rem 2.5rem}
         <h2 class="sec-h rv en">What we do <i>well.</i></h2>
       </div>
       <div class="svc-rows">
-        <div class="svc-row rv"><div class="svc-n">01</div><div>
+        <div class="svc-row"><div>
           <h3 class="es">Citas Médicas</h3><h3 class="en">Medical Appointments</h3>
           <p class="es">Recogido, traslado y regreso coordinados. Sin estrés para la familia.</p>
           <p class="en">Pickup, transport and return coordinated. No stress for the family.</p>
         </div></div>
-        <div class="svc-row rv d1"><div class="svc-n">02</div><div>
+        <div class="svc-row"><div>
           <h3 class="es">Diálisis</h3><h3 class="en">Dialysis</h3>
           <p class="es">Servicio regular y confiable. La misma dedicación semana tras semana.</p>
           <p class="en">Reliable, scheduled service. The same care week after week.</p>
         </div></div>
-        <div class="svc-row rv d2"><div class="svc-n">03</div><div>
+        <div class="svc-row"><div>
           <h3 class="es">Quimioterapia</h3><h3 class="en">Chemotherapy</h3>
           <p class="es">Traslados cómodos y discretos para pacientes oncológicos.</p>
           <p class="en">Comfortable, discreet transport for oncology patients.</p>
         </div></div>
-        <div class="svc-row rv d3"><div class="svc-n">04</div><div>
+        <div class="svc-row"><div>
           <h3 class="es">Altas Hospitalarias</h3><h3 class="en">Hospital Discharges</h3>
           <p class="es">Coordinamos con el hospital. A casa o centro de rehabilitación.</p>
           <p class="en">We coordinate with the hospital. Home or rehabilitation center.</p>
         </div></div>
-        <div class="svc-row rv d4"><div class="svc-n">05</div><div>
+        <div class="svc-row"><div>
           <h3 class="es">Traslados entre Facilidades</h3><h3 class="en">Facility Transfers</h3>
           <p class="es">Entre hospitales, hogares de cuido y centros de rehabilitación.</p>
           <p class="en">Between hospitals, care homes and rehabilitation centers.</p>
         </div></div>
-        <div class="svc-row rv"><div class="svc-n">06</div><div>
+        <div class="svc-row"><div>
           <h3 class="es">Emergencias</h3><h3 class="en">Emergencies</h3>
           <p class="es">Intervención avanzada cuando la situación lo requiere.</p>
           <p class="en">Advanced intervention when the situation demands it.</p>

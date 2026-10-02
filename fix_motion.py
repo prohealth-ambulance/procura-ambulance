@@ -1,0 +1,8 @@
+with open('index.html','r',encoding='utf-8') as f: html=f.read()
+html = html.replace('class="svc-row rv d1"', 'class="svc-row"')
+html = html.replace('class="svc-row rv d2"', 'class="svc-row"')
+html = html.replace('class="svc-row rv d3"', 'class="svc-row"')
+html = html.replace('class="svc-row rv d4"', 'class="svc-row"')
+html = html.replace('class="svc-row rv"', 'class="svc-row"')
+with open('index.html','w',encoding='utf-8') as f: f.write(html)
+print('Movimiento de servicios removido')
