@@ -1,0 +1,1 @@
+  (function(){var t=document.querySelector('.fl-tel svg'),w=document.querySelector('.fl-wa svg'),i=document.querySelectorAll('.mb-ico');if(t&&i[0])i[0].innerHTML=t.outerHTML;if(w&&i[1])i[1].innerHTML=w.outerHTML;})();
