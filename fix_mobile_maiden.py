@@ -1,0 +1,7 @@
+with open('index.html','r',encoding='utf-8') as f: html=f.read()
+html = html.replace('.hero-photo{height:280px;order:-1;}', '.hero-photo{height:180px;order:-1;}')
+html = html.replace('.fl-btn{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font);font-size:13px;font-weight:600;text-decoration:none;padding:13px;width:48px;height:48px;border-radius:50%;box-shadow:0 4px 16px rgba(0,0,0,.18);transition:transform .12s}', '.fl-btn{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font);font-size:13px;font-weight:600;text-decoration:none;padding:10px;width:40px;height:40px;border-radius:50%;box-shadow:0 4px 16px rgba(0,0,0,.18);transition:transform .12s}')
+html = html.replace('.fl-btn{padding:13px;border-radius:50%}', '.fl-btn{padding:10px;border-radius:50%;width:40px;height:40px}')
+html = html.replace('.floats{position:fixed;bottom:1.5rem;right:1.5rem;z-index:199;display:flex;flex-direction:column;gap:8px;align-items:flex-end}', '.floats{position:fixed;bottom:1.2rem;right:1.2rem;z-index:199;display:flex;flex-direction:column;gap:6px;align-items:flex-end}')
+with open('index.html','w',encoding='utf-8') as f: f.write(html)
+print('Maiden fixes aplicados')
